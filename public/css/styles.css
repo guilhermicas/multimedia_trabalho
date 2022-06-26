@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Latin', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EFEFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #E2E4FC;
+    color: #1F2C9A;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 20px 35px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #bbbedc;
+    /*text-decoration: underline;*/
+}
+
+.conteudo-main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.conteudo-main input {
+    width: 100%;
+    padding: 10px;
+}
+
+/* CARTÕES */
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.card {
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.card:hover{
+    background-color: #bbbedc;
+    transition: background-color 0.5s ease;
+}
+
+.card a, a:visited, a:hover, a:active {
+    color:inherit;
+    text-decoration: none;
+}
+
+.card img {
+    width: 80%;
+}
+
+.card p {
+    text-align: center;
+}
+
+.produto {
+    margin-top: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.produto img {
+   height: 420px;
+   width: auto;
+}
+
+.info-produto {
+    text-align: left;
+    margin-top: 10vh;
+}
+
+.info-produto h1 {
+    font-size: 76px;
+    margin-bottom: 10px;
+}
+.info-produto p {
+    font-size: 40px;
+}
+.info-produto a {
+    text-decoration: none;
+    background-color: #e2e4fc;
+    color: #1f2c9a;
+    font-size: 20px;
+    padding: 20px 35px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.conteudo-main input {
+    width: 30%;
+}
+
+.conteudo-main input[type=button] {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media(max-width:1200px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .produto img {
+    height: 300px;
+    width: auto;
+    }
+    .info-produto h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .info-produto p {
+        font-size: 20px;
+    }
+    .info-produto a {
+        text-decoration: none;
+        background-color: #e2e4fc;
+        color: #1f2c9a;
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    nav ul li a {
+        margin-right: 4px;
+        padding: 10px;
+    }
+}
