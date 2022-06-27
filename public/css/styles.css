@@ -12,15 +12,16 @@ body {
     background-color: #EFEFFF;
 }
 
+/* HEADER / NAV */
+.logo {
+    width: 35%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
     align-items: center;
-}
-
-.logo {
-    width: 30%;
 }
 
 nav ul {
@@ -36,6 +37,7 @@ nav ul li a {
     margin-right: 20px;
     padding: 20px 35px;
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 nav ul li a:hover {
@@ -43,15 +45,34 @@ nav ul li a:hover {
     /*text-decoration: underline;*/
 }
 
+/* Conteúdo principal */
 .conteudo-main {
     width: 80%;
     margin: auto;
+    margin-top: 8vh;
     text-align: center;
 }
 
 .conteudo-main input {
     width: 100%;
     padding: 10px;
+}
+
+.conteudo-main input {
+    width: 40%;
+}
+
+.conteudo-main textarea {
+    width: 40%;
+}
+
+.conteudo-main textarea::placeholder {
+    padding: 10px;
+}
+
+.conteudo-main input[type=button] {
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 /* CARTÕES */
@@ -91,6 +112,8 @@ nav ul li a:hover {
     text-align: center;
 }
 
+
+/* Estilização de produtos */
 .produto {
     margin-top: 12vh;
     display: flex;
@@ -124,33 +147,56 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.conteudo-main input {
-    width: 30%;
-}
-
-.conteudo-main input[type=button] {
-    margin-top: 10px;
+/* Classes extra */
+.btn-formulario {
+    text-decoration: none;
+    background-color: #e2e4fc;
+    color: #1f2c9a;
     font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-@media(max-width:1200px) {
-    .cards{
+.social {
+    flex-direction: row !important;
+}
+
+/* MOBILE / Responsividade */
+@media(max-width:1000px) {
+    nav ul li a {
+        margin-right: 4px;
+        padding: 20px 15px;
+    }
+    .conteudo-main input {
+        width: 55%;
+    }
+
+    .conteudo-main textarea {
+        width: 55%;
+    }
+
+    .cards {
         flex-direction: column;
     }
     .card{
-        width: 100%;
+        width: 60%;
     }
+
     .produto img {
-    height: 300px;
-    width: auto;
+        height: 300px;
+        width: auto;
     }
+
     .info-produto h1 {
         font-size: 36px;
         margin-bottom: 10px;
     }
+
     .info-produto p {
         font-size: 20px;
     }
+
     .info-produto a {
         text-decoration: none;
         background-color: #e2e4fc;
@@ -159,9 +205,5 @@ nav ul li a:hover {
         padding: 10px 15px;
         border-radius: 10px;
         width: 100%;
-    }
-    nav ul li a {
-        margin-right: 4px;
-        padding: 10px;
     }
 }
